@@ -46,4 +46,11 @@ public class Zelle {
     public void setNachbarminen(int anzahl) {
         this.nachbarminen = anzahl;
     }
+
+    public void reset() {
+        this.mine = false;
+        this.aufgedeckt = false;
+        this.geflaggt = false;
+        this.nachbarminen = 0;  
+    }
 }

@@ -115,4 +115,13 @@ public class Feld {
         }
         return true;
     }
+
+    public void reset() {
+        for (int r = 0; r < reihen; r++) {
+            for (int s = 0; s < spalten; s++) {
+                zellen[r][s].reset();
+            }
+        }
+        minenPlatziert = false;
+    }
 }
